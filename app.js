@@ -24,7 +24,6 @@ const restartgame=()=>{
 
 boxes.forEach((box) => {
     box.addEventListener("click",   () => {
-        console.log("box was clicked");
         if(turnO){
             //player 0
             box.innerText="O";
@@ -52,7 +51,7 @@ const enableBoxes=()=>{
     }
 };
 const showwinner=(winner)=>{
-    msg.innerText=`congratulation, Winner ${winner}`;
+    msg.innerText=`Congratulation, Winner is ${winner}`;
     msgcontainer.classList.remove("hide");
     disableBoxes();
 };
@@ -65,7 +64,6 @@ const checkWinner=() =>{
 
         if(pos1val !== "" && pos2val !== "" && pos3val !== ""){
             if(pos1val===pos2val  &&pos2val===pos3val){
-                console.log("winner",pos1val);
                 showwinner(pos1val);
             }
         }
