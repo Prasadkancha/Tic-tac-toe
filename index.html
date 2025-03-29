@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <h1> first line</h1>
-        <h2> second line</h2>
-        <h3> third line</h3>
-        <h4>fourth line</h4>
-        <h5> </h5>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+    <h1  >TIC TAC TOE</h1>
+    <div class="message-container hide">
+        <p id="msg"> winner  </p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <button id="reset_btn"> Restart Game</button>
+    <script src="app.js"></script>
+</body>
 </html>
