@@ -11,6 +11,14 @@ h1{
     color: #ffffff;
     font-size: 2rem;
 }
+.message-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
 #new-btn{
     padding: 1rem;
     font-size: .75rem;
@@ -20,7 +28,7 @@ h1{
     border: none;
 }
 .hide{
-    visibility: hidden;
+    display: none;
 }
 body{
     background-color: #196680;
